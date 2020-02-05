@@ -35,7 +35,7 @@
             </Label>
             <DockPanel x:Name="SourceFolder_DockPanel">
                 <TextBox x:Name="SourceDirPath_TextBox" Margin="5" HorizontalAlignment="Left" MinWidth="250"></TextBox>
-                <Button x:Name="SourceDirBrowse_Button" Content="Browse" Margin="5" HorizontalAlignment="Right" MinWidth="75"/>
+                <Button x:Name="SourceDirBrowse_Button" Content="Browse" Margin="5" HorizontalAlignment="Right" MinWidth="75" Click="SourceDirBrowse_Button_Click"/>
             </DockPanel>
         </StackPanel>
         <StackPanel Grid.ColumnSpan="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="ChoiceDestinationFolder_StackPanel">
@@ -44,7 +44,7 @@
             </Label>
             <DockPanel x:Name="DestinationFolder_DockPanel">
                 <TextBox x:Name="DestinationDirPath_TextBox" Margin="5" HorizontalAlignment="Left" MinWidth="300"></TextBox>
-                <Button x:Name="DestinationDirBrowse_Button" Content="Browse" Margin="5" HorizontalAlignment="Right" MinWidth="100"/>
+                <Button x:Name="DestinationDirBrowse_Button" Content="Browse" Margin="5" HorizontalAlignment="Right" MinWidth="100" Click="DestinationDirBrowse_Button_Click"/>
             </DockPanel>
         </StackPanel>
         <DockPanel x:Name="AmountOfFiles_DockPanel" Grid.ColumnSpan="3" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -62,7 +62,7 @@
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.ColumnSpan="3" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Padding="10" x:Name="Generate_Button">Generate</Button>
+            <Button Padding="10" x:Name="Generate_Button" Click="Generate_Button_Click">Generate</Button>
         </StackPanel>
     </Grid>
 </Window>
